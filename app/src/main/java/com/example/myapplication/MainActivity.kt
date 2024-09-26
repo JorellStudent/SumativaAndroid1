@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
@@ -13,6 +14,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -49,6 +51,13 @@ fun TarjetaDePresentacion() {
 
             Spacer(modifier = Modifier.height(16.dp))
 
+            Image(
+                painter = painterResource(id = R.drawable.fotoperfil),
+                contentDescription = "Imagen de perfil",
+                modifier = Modifier
+                    .size(100.dp)
+                    .padding(bottom = 16.dp)
+            )
 
             Text(
                 text = "Jorell Antonio Bermejo Arias",
